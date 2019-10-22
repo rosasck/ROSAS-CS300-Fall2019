@@ -1,0 +1,32 @@
+<html>
+        <script>
+
+                Z=prompt("First Operand");
+                Y=prompt("Enter Operand ");
+                X=prompt("Second Operand");
+                if( Y == "+")
+                {
+                        H=eval(Z)+ eval(X);
+                        alert(H);
+                }
+
+                if( Y == "-")
+                {
+                        H=eval(Z)- eval(X);
+                        alert(H);
+                }
+
+                if( Y == "/")
+                {
+                        H=eval(Z)/ eval(X);
+                        alert(H);
+                }
+
+                if( Y == "*")
+                {
+                        H=eval(Z) * eval(X);
+                        alert(H);
+                }
+        </script>
+</html>
+
