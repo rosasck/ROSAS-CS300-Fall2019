@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-color: #FBEEE6
+}
+</style>
+</head>
+       <h1><font color= "b6a497"> A Fancy JavaScript Calculator </font> </h1>
+	<form id="myForm" oninput="return myfunc()">
+		<input type= "number" name="firstoperand" id="first">
+		<select id= "operand">
+			<option value="+"> + </>
+			<option value="-"> - </>
+			<option value="/"> / </>
+			<option value="*"> * </>
+		</select>
+		<input type="text" name="secondoperand" id="second">
+		<font> = </font>
+		<input type="text" name="ansj" id="ans">
+                   
+	</form>	
+
+        
+
+<script>
+function myfunc()
+{
+	var x= parseInt(document.getElementById("first").value);
+	var b= document.getElementById("operand").value;
+	var o= parseInt(document.getElementById("second").value);
+	var answer;
+	
+        if( b == "+")
+		answer= x + o;
+	if(b == "-")
+		answer= x - o;
+	if(b == "*")
+		answer= x*o;
+	if(b == "/")
+		answer= x/o;
+	document.getElementById("ans").value = answer;
+	
+            
+	  
+}
+</script>
+
+</html>
